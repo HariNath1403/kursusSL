@@ -1,0 +1,125 @@
+@mixin header-style {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $text-big;
+  font-weight: 800;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  position: relative;
+}
+
+.step {
+  width: 10rem;
+  height: 27.5rem;
+  background: $color-tint;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.step h2 {
+  margin: 10px 0 0;
+  font-size: 28px;
+  color: $color-shade;
+  font-weight: bold;
+}
+
+.step p {
+  margin: 5px;
+  font-size: calc(#{$text-small + $text-mini}/ 2);
+  font-size: $text-mini;
+  color: #666;
+}
+
+.step-1 {
+  z-index: 3;
+}
+
+.step-2 {
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.step-3 {
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+.medal {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.step-1 .medal {
+  color: gold;
+}
+
+.step-2 .medal {
+  color: silver;
+}
+
+.step-3 .medal {
+  color: bronze;
+}
+
+.section {
+  transition: all 0.75s;
+
+  &--hidden {
+    opacity: 0;
+    transform: translateY($space-big);
+  }
+}
+
+#quiz {
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: calc(#{$space-big * 2});
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: rgba($color-black, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  &__icon {
+    border: 16px solid $color-grey; /* Light grey */
+    border-top: 16px solid $color-main; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+}
+
+#spinner {
+  display: none;
+}

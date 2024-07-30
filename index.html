@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" defer src="js/controller.js"></script>
+    <title>Kursus SL</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="home" id="home">
+          <div class="home__nav">
+            <img
+              src="imgs/logo farmasi.jpg"
+              alt="PKD Tampin Pharmacy Logo"
+              class="home__nav--img"
+            />
+            <button class="home__nav--menu">
+              <ion-icon name="menu" class="home__nav--menu--icon"></ion-icon>
+            </button>
+          </div>
+          <div class="home__main">
+            <div class="home__main--video">
+              <video src="imgs/video.mp4" autoplay loop muted></video>
+            </div>
+
+            <div class="home__main--header">
+              <h1 class="home__main--header--main">
+                Kursus Echo Bahasa Isyarat
+              </h1>
+              <ul class="home__main--header--sub">
+                <li class="home__main--header--sub--txt">
+                  <ion-icon
+                    name="settings"
+                    class="home__main--header--sub--icon"
+                  ></ion-icon>
+                  <span>Anjuran Unit Farmasi PKD Tampin</span>
+                </li>
+                <li class="home__main--header--sub--txt">
+                  <ion-icon
+                    name="calendar"
+                    class="home__main--header--sub--icon"
+                  ></ion-icon>
+                  <span>Pada 16 & 23 Ogos 2024 (8 pagi - 5 petang)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about section" id="about">
+          <h1 class="about__header">Kenapa Belajar Bahasa Isyarat?</h1>
+          <figure class="about__figure">
+            <img
+              src="imgs/about--1.avif"
+              alt="Sign Language"
+              class="about__figure--img"
+            />
+            <button class="about__figure--btn about__figure--btn--left">
+              <ion-icon name="chevron-back-circle"></ion-icon>
+            </button>
+            <button class="about__figure--btn about__figure--btn--right">
+              <ion-icon name="chevron-forward-circle"></ion-icon>
+            </button>
+          </figure>
+          <div class="about__importance">
+            <ul class="about__importance--list">
+              <li class="about__importance--line">
+                <ion-icon
+                  name="chatbubbles"
+                  class="about__importance--line--icon"
+                ></ion-icon>
+                <span class="about__importance--line--txt"
+                  >Komunikasi dengan Orang Pekak dan Kurang Pendengaran</span
+                >
+              </li>
+              <li class="about__importance--line">
+                <ion-icon
+                  name="heart"
+                  class="about__importance--line--icon"
+                ></ion-icon>
+                <span class="about__importance--line--txt"
+                  >Meningkatkan Kesedaran dan Empati yang lebih mendalam</span
+                >
+              </li>
+              <li class="about__importance--line">
+                <ion-icon
+                  name="body"
+                  class="about__importance--line--icon"
+                ></ion-icon>
+                <span class="about__importance--line--txt"
+                  >Peluang kerjaya dalam bidang pendidikan khas &
+                  penterjemahan</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="references section" id="references">
+          <h2 class="references__header">Sumber Rujukan</h2>
+          <div class="references__grid">
+            <figure class="references__figure">
+              <a
+                href="ancillary/alphabets.html"
+                class="references__figure--link"
+              >
+                <img
+                  src="imgs/ref-alphabets.jpg"
+                  alt="Alphabet signs"
+                  class="references__figure--img"
+                />
+              </a>
+              <figcaption class="references__figure--caption">
+                Abjad Jari
+              </figcaption>
+            </figure>
+            <figure class="references__figure">
+              <a href="ancillary/numbers.html" class="references__figure--link">
+                <img
+                  src="imgs/ref-numbers.jpg"
+                  alt="Numbers signs"
+                  class="references__figure--img"
+                />
+              </a>
+              <figcaption class="references__figure--caption">
+                Abjad Nombor
+              </figcaption>
+            </figure>
+            <figure class="references__figure">
+              <a href="ancillary/intro.html" class="references__figure--link">
+                <img
+                  src="imgs/ref-intro.jpeg"
+                  alt="Introduction signs"
+                  class="references__figure--img"
+                />
+              </a>
+              <figcaption class="references__figure--caption">
+                Pengenalan
+              </figcaption>
+            </figure>
+            <figure class="references__figure">
+              <a href="ancillary/wh.html" class="references__figure--link">
+                <img
+                  src="imgs/ref-wh.jpeg"
+                  alt="WH Questions signs"
+                  class="references__figure--img"
+                />
+              </a>
+              <figcaption class="references__figure--caption">
+                Soalan WH
+              </figcaption>
+            </figure>
+            <figure class="references__figure">
+              <a
+                href="ancillary/responses.html"
+                class="references__figure--link"
+              >
+                <img
+                  src="imgs/ref-responses.jpeg"
+                  alt="Responses signs"
+                  class="references__figure--img"
+                />
+              </a>
+              <figcaption class="references__figure--caption">
+                Reaksi
+              </figcaption>
+            </figure>
+            <figure class="references__figure">
+              <a href="ancillary/medical.html" class="references__figure--link">
+                <img
+                  src="imgs/ref-medical.jpeg"
+                  alt="Medical related signs"
+                  class="references__figure--img"
+                />
+              </a>
+              <figcaption class="references__figure--caption">
+                Perubatan
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="book section" id="book">
+          <h2 class="book__header">Buku Terbitan NESDA</h2>
+          <div class="book__carousel">
+            <div class="book__carousel--main">
+              <img
+                src="imgs/book/page 1.jpg"
+                alt="Book"
+                class="book__carousel--main--img"
+              />
+            </div>
+            <div class="book__carousel--opts">
+              <img
+                src="imgs/book/page 2.jpg"
+                alt="Book"
+                class="book__carousel--opts--img"
+                data-opt="2"
+              />
+              <img
+                src="imgs/book/page 3.jpg"
+                alt="Book"
+                class="book__carousel--opts--img"
+                data-opt="3"
+              />
+              <img
+                src="imgs/book/page 4.jpg"
+                alt="Book"
+                class="book__carousel--opts--img"
+                data-opt="4"
+              />
+            </div>
+          </div>
+          <div class="book__footnote">
+            <p class="book__footnote--txt">
+              Buku ini boleh dibeli daripada En. Khairuzzaman, JKN Negeri
+              Sembilan. Harga senaskhah hanya
+              <strong class="book__footnote--txt--bold">RM25</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="quiz section" id="quiz">
+          <h2 class="quiz__header">Kuiz Bahasa Isyarat Asas</h2>
+          <form action="#" class="quiz__authorization" id="authorization">
+            <div class="quiz__authorization--row">
+              <label for="password" class="quiz__authorization--label"
+                >Kata Laluan</label
+              >
+              <input
+                type="password"
+                id="password"
+                class="quiz__authorization--input"
+              />
+            </div>
+            <button class="quiz__authorization--submit">Masuk</button>
+          </form>
+          <div class="spinner" id="spinner">
+            <div class="spinner__icon"></div>
+          </div>
+
+          <form action="#" class="quiz__form" id="post-test">
+            <h2 class="quiz__form--header">POST - TEST (10 min)</h2>
+            <div class="quiz__form--row">
+              <label for="name" class="quiz__form--label">Nama</label>
+              <input type="text" class="quiz__form--input" id="name" required />
+            </div>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="facility" class="quiz__form--label">
+                Tempat Bertugas
+              </legend>
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="facility-pkd-tampin"
+                  name="facility"
+                  value="PKD Tampin"
+                  required
+                />
+                <label for="facility-pkd-tampin">PKD Tampin</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="facility-kk-tampin"
+                  name="facility"
+                  value="KK Tampin"
+                />
+                <label for="facility-kk-tampin">KK Tampin</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="facility-kk-gmch"
+                  name="facility"
+                  value="KK Gemencheh"
+                />
+                <label for="facility-kk-gmch">KK Gemencheh</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="facility-kk-gemas"
+                  name="facility"
+                  value="KK Gemas"
+                />
+
+                <label for="facility-kk-gemas">KK Gemas</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="facility-kk-jelai"
+                  name="facility"
+                  value="KK Jelai"
+                />
+                <label for="facility-kk-jelai">KK Jelai</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="facility-kk-aks"
+                  name="facility"
+                  value="KK AKS"
+                />
+                <label for="facility-kk-aks">KK AKS</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="facility-kk-bru"
+                  name="facility"
+                  value="KK BRU"
+                />
+                <label for="facility-kk-bru">KK BRU</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="facility-kk-lain"
+                  name="facility"
+                  value="Fasiliti Lain"
+                />
+                <label for="facility-kk-lain">Fasiliti Lain</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--1" class="quiz__form--label">
+                1. Apakah huruf yang ditunjukan?
+              </legend>
+              <img src="imgs/quiz/question 1.jpeg" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-1-opt-1"
+                  name="ques--1"
+                  value="a"
+                />
+                <label for="ques-1-opt-1">Huruf B</label>
+                <br />
+
+                <input
+                  type="radio"
+                  id="ques-1-opt-2"
+                  name="ques--1"
+                  value="b"
+                />
+                <label for="ques-1-opt-2">Huruf D</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-1-opt-3"
+                  name="ques--1"
+                  value="c"
+                />
+                <label for="ques-1-opt-3">Huruf G</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-1-opt-4"
+                  name="ques--1"
+                  value="d"
+                />
+                <label for="ques-1-opt-4">Huruf U</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--2" class="quiz__form--label">
+                2. Huruf K
+              </legend>
+
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-2-opt-1"
+                  name="ques--2"
+                  value="a"
+                />
+                <label for="ques-2-opt-1">
+                  <img
+                    src="imgs/quiz/question 2a.png"
+                    class="quiz__form--options--img"
+                  />
+                </label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-2-opt-2"
+                  name="ques--2"
+                  value="b"
+                />
+                <label for="ques-2-opt-2">
+                  <img
+                    src="imgs/quiz/question 2b.png"
+                    class="quiz__form--options--img"
+                  />
+                </label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-2-opt-3"
+                  name="ques--2"
+                  value="c"
+                />
+                <label for="ques-2-opt-3">
+                  <img
+                    src="imgs/quiz/question 2c.png"
+                    class="quiz__form--options--img"
+                  />
+                </label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-2-opt-4"
+                  name="ques--2"
+                  value="d"
+                />
+                <label for="ques-2-opt-4">
+                  <img
+                    src="imgs/quiz/question 2d.png"
+                    class="quiz__form--options--img"
+                  />
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--3" class="quiz__form--label">
+                3. Apakah yang ditanya?
+              </legend>
+              <img src="imgs/quiz/question 3.webp" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-3-opt-1"
+                  name="ques--3"
+                  value="a"
+                />
+                <label for="ques-3-opt-1">Lokasi</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-3-opt-2"
+                  name="ques--3"
+                  value="b"
+                />
+                <label for="ques-3-opt-2">Waktu</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-3-opt-3"
+                  name="ques--3"
+                  value="c"
+                />
+                <label for="ques-3-opt-3">Nama</label> <br />
+                <input
+                  type="radio"
+                  id="ques-3-opt-4"
+                  name="ques--3"
+                  value="d"
+                />
+                <label for="ques-3-opt-4">Pekerjaan</label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--4" class="quiz__form--label">4. Ucapan</legend>
+              <img src="imgs/quiz/question 4.webp" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-4-opt-1"
+                  name="ques--4"
+                  value="a"
+                />
+                <label for="ques-4-opt-1">Selamat pagi</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-4-opt-2"
+                  name="ques--4"
+                  value="b"
+                />
+                <label for="ques-4-opt-2">Selamat petang</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-4-opt-3"
+                  name="ques--4"
+                  value="c"
+                />
+                <label for="ques-4-opt-3">Selamat malam</label> <br />
+                <input
+                  type="radio"
+                  id="ques-4-opt-4"
+                  name="ques--4"
+                  value="d"
+                />
+                <label for="ques-4-opt-4">Selamat hari jadi</label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--5" class="quiz__form--label">
+                5. Perbualan
+              </legend>
+              <img src="imgs/quiz/question 5.webp" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-5-opt-1"
+                  name="ques--5"
+                  value="a"
+                />
+                <label for="ques-5-opt-1">Assalamualaikum</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-5-opt-2"
+                  name="ques--5"
+                  value="b"
+                />
+                <label for="ques-5-opt-2">Hello</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-5-opt-3"
+                  name="ques--5"
+                  value="c"
+                />
+                <label for="ques-5-opt-3">Apa khabar</label> <br />
+                <input
+                  type="radio"
+                  id="ques-5-opt-4"
+                  name="ques--5"
+                  value="d"
+                />
+                <label for="ques-5-opt-4">Ok boss!</label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--6" class="quiz__form--label">
+                6. Perbuatan
+              </legend>
+              <img src="imgs/quiz/question 6.gif" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-6-opt-1"
+                  name="ques--6"
+                  value="a"
+                />
+                <label for="ques-6-opt-1">Motorsikal</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-6-opt-2"
+                  name="ques--6"
+                  value="b"
+                />
+                <label for="ques-6-opt-2">Tidak ada</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-6-opt-3"
+                  name="ques--6"
+                  value="c"
+                />
+                <label for="ques-6-opt-3">Boleh</label> <br />
+                <input
+                  type="radio"
+                  id="ques-6-opt-4"
+                  name="ques--6"
+                  value="d"
+                />
+                <label for="ques-6-opt-4">Di sini</label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--7" class="quiz__form--label">
+                7. Siapa yang ditunjukkan?
+              </legend>
+              <img src="imgs/quiz/question 7.png" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-7-opt-1"
+                  name="ques--7"
+                  value="a"
+                />
+                <label for="ques-7-opt-1">Ayah</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-7-opt-2"
+                  name="ques--7"
+                  value="b"
+                />
+                <label for="ques-7-opt-2">Ibu</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-7-opt-3"
+                  name="ques--7"
+                  value="c"
+                />
+                <label for="ques-7-opt-3">Pasangan</label> <br />
+                <input
+                  type="radio"
+                  id="ques-7-opt-4"
+                  name="ques--7"
+                  value="d"
+                />
+                <label for="ques-7-opt-4">Kawan</label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--8" class="quiz__form--label">8. Reaksi</legend>
+              <img src="imgs/quiz/question 8.png" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-8-opt-1"
+                  name="ques--8"
+                  value="a"
+                />
+                <label for="ques-8-opt-1">Stress</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-8-opt-2"
+                  name="ques--8"
+                  value="b"
+                />
+                <label for="ques-8-opt-2">Sakit</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-8-opt-3"
+                  name="ques--8"
+                  value="c"
+                />
+                <label for="ques-8-opt-3">Kecewa</label> <br />
+                <input
+                  type="radio"
+                  id="ques-8-opt-4"
+                  name="ques--8"
+                  value="d"
+                />
+                <label for="ques-8-opt-4">Risau</label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--9" class="quiz__form--label">
+                9. Perbuatan minta
+              </legend>
+              <video
+                src="imgs/quiz/question 9.mp4"
+                loop
+                muted
+                autoplay
+                class="quiz__form--img"
+              ></video>
+
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-9-opt-1"
+                  name="ques--9"
+                  value="a"
+                />
+                <label for="ques-9-opt-1">Duit</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-9-opt-2"
+                  name="ques--9"
+                  value="b"
+                />
+                <label for="ques-9-opt-2">Tolong</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-9-opt-3"
+                  name="ques--9"
+                  value="c"
+                />
+                <label for="ques-9-opt-3">Cari gaduh</label> <br />
+                <input
+                  type="radio"
+                  id="ques-9-opt-4"
+                  name="ques--9"
+                  value="d"
+                />
+                <label for="ques-9-opt-4">Cepat</label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz__form--row quiz__form--group">
+              <legend for="ques--10" class="quiz__form--label">
+                10. Sakit apa yang ditunjukan?
+              </legend>
+              <img src="imgs/quiz/question 10.gif" class="quiz__form--img" />
+              <div class="quiz__form--options">
+                <input
+                  type="radio"
+                  id="ques-10-opt-1"
+                  name="ques--10"
+                  value="a"
+                />
+                <label for="ques-10-opt-1">Demam</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-10-opt-2"
+                  name="ques--10"
+                  value="b"
+                />
+                <label for="ques-10-opt-2">Kencing manis</label>
+                <br />
+                <input
+                  type="radio"
+                  id="ques-10-opt-3"
+                  name="ques--10"
+                  value="c"
+                />
+                <label for="ques-10-opt-3">Sakit tekak</label> <br />
+                <input
+                  type="radio"
+                  id="ques-10-opt-4"
+                  name="ques--10"
+                  value="d"
+                />
+                <label for="ques-10-opt-4">Loya / Muntah</label>
+              </div>
+            </fieldset>
+            <button class="quiz__form--submit">Hantar</button>
+          </form>
+          <div class="quiz__submitted" id="test-submitted">
+            <p class="quiz__submitted--txt">
+              Terima kasih kerana menjawab kuiz 'Post - Test'! Jawapan anda
+              telah berjaya dihantar. Nantikan keputusan di papan skor! 🥳
+            </p>
+          </div>
+
+          <div class="quiz__scores" id="score-board">
+            <h2 class="quiz__scores--header">Papan Skor</h2>
+            <h3 class="quiz__scores--sub">
+              <span class="quiz__scores--sub--txt">Keputusan pada</span>
+              <span class="quiz__scores--sub--date">31/07/2024</span>
+            </h3>
+            <div class="podium quiz__scores--figure">
+              <div class="step step-1">
+                <div class="medal">🥇</div>
+                <h2>1st</h2>
+                <p id="winner">John Doe</p>
+              </div>
+              <div class="step step-2">
+                <div class="medal">🥈</div>
+                <h2>2nd</h2>
+                <p id="first-runner-up">Jane Smith</p>
+              </div>
+              <div class="step step-3">
+                <div class="medal">🥉</div>
+                <h2>3rd</h2>
+                <p id="second-runner-up">Alex Johnson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer section" id="footer">
+          <div class="footer__header">Hubungi Kami</div>
+          <ul class="footer__list">
+            <li class="footer__list--row">
+              <ion-icon name="home" class="footer__list--icon"></ion-icon>
+              <a
+                href="https://sites.google.com/moh.gov.my/farmasi-pkd-tampin-v2/mesyuarat"
+                target="_blank"
+                class="footer__list--link footer__list--txt"
+                >Website MOH Workspace PKD Tampin [click me]</a
+              >
+            </li>
+            <li class="footer__list--row">
+              <ion-icon name="build" class="footer__list--icon"></ion-icon>
+              <p class="footer__list--txt">
+                Designed & Developed by PF Hari (PKD Tampin)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="nav" id="nav">
+          <button class="nav__exit">X</button>
+          <div class="nav__list">
+            <li class="nav__list--row">
+              <a href="#about" class="nav__list--link">Manfaat</a>
+            </li>
+            <li class="nav__list--row">
+              <a href="#references" class="nav__list--link">Rujukan</a>
+            </li>
+            <li class="nav__list--row">
+              <a href="#book" class="nav__list--link">NESDA</a>
+            </li>
+            <li class="nav__list--row">
+              <a href="#quiz" class="nav__list--link">Post-test</a>
+            </li>
+            <li class="nav__list--row">
+              <a href="#footer" class="nav__list--link">Hubungi Kami</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

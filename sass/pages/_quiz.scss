@@ -1,0 +1,180 @@
+.quiz {
+  padding: $space-margin 0;
+  background-color: $color-accent;
+
+  &__header {
+    @include header-style;
+    color: $color-tint;
+  }
+
+  &__authorization {
+    margin-top: $space-gap;
+    padding: 0 $space-gap;
+    display: flex;
+    flex-direction: column;
+    gap: $space-mini;
+    justify-content: center;
+    align-items: center;
+    font-size: $text-standard;
+    color: $color-tint;
+
+    &--row {
+      display: flex;
+      flex-direction: row;
+      gap: $space-mini;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--label {
+      width: 50%;
+    }
+
+    &--input {
+      padding: $space-supersmall;
+      background-color: $color-tint;
+      color: $color-accent;
+      border: none;
+      font-size: $text-small;
+      font-family: inherit;
+      width: 40%;
+    }
+
+    &--submit {
+      margin-top: $space-small;
+      padding: $space-mini $space-small;
+      background-color: $color-shade;
+      color: $color-tint;
+      border: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-radius: 9px;
+      font-size: $text-standard;
+      letter-spacing: 1.65px;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-main;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: $space-margin;
+    padding: 0 $space-gap;
+    font-size: $text-standard;
+    color: $color-tint;
+    display: flex;
+    flex-direction: column;
+    gap: $space-sub;
+
+    &--header {
+      @include header-style;
+      font-size: $text-emphasize;
+      margin-bottom: $space-small;
+    }
+
+    &--row {
+      display: flex;
+      flex-direction: column;
+      gap: $space-mini;
+    }
+
+    &--label {
+      margin-bottom: $space-small;
+      font-size: calc(#{$text-small + $text-standard}/ 2);
+      font-size: $text-standard;
+    }
+
+    &--input {
+      padding: $space-supersmall $space-mini;
+      font-size: calc(#{$text-small + $text-standard}/ 2);
+      font-family: inherit;
+      color: $color-shade;
+      background-color: $color-tint;
+      border: none;
+    }
+
+    &--group {
+      width: 100%;
+      label {
+        font-size: calc(#{$text-small + $text-standard}/ 2);
+        margin-left: $space-small;
+      }
+    }
+
+    &--img {
+      // margin-top: $space-small;
+      width: 100%;
+      height: auto;
+    }
+
+    &--options {
+      &--img {
+        width: $space-widegap;
+        height: $space-big;
+        margin-bottom: $space-small;
+      }
+    }
+
+    &--submit {
+      margin-top: $space-small;
+      width: 50%;
+      padding: $space-mini $space-small;
+      background-color: $color-shade;
+      color: $color-tint;
+      border: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-radius: 9px;
+      font-size: $text-standard;
+      letter-spacing: 1.65px;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-main;
+      }
+    }
+  }
+
+  &__submitted {
+    padding: $space-sub;
+    margin-top: $space-small;
+
+    &--txt {
+      font-size: $text-standard;
+      font-weight: 500;
+      color: $color-tint;
+      text-align: justify;
+    }
+  }
+
+  &__scores {
+    margin: $space-decent 0;
+    padding: $space-standard 0 $space-widegap;
+    background-color: $color-shade;
+
+    &--header {
+      @include header-style;
+      color: $color-tint;
+    }
+
+    &--sub {
+      margin-top: $space-small;
+      text-align: center;
+      font-size: $text-small;
+      font-weight: 500;
+      color: $color-tint;
+    }
+
+    &--figure {
+      margin-top: $space-standard;
+    }
+  }
+}
+
+#post-test,
+#test-submitted,
+#score-board {
+  display: none;
+}

@@ -1,0 +1,67 @@
+.about {
+  margin: $space-widegap 0;
+
+  &__header {
+    @include header-style;
+    color: $color-shade;
+  }
+
+  &__figure {
+    position: relative;
+    margin-top: $space-margin;
+    width: 100%;
+    height: auto;
+
+    &--img {
+      width: 100%;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+
+    &--btn {
+      font-size: calc(#{$text-big + $text-header-sub}/ 2);
+      color: $color-shade;
+      position: absolute;
+      top: 50%;
+      border: none;
+      background-color: transparent;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+
+      &--left {
+        left: $space-small;
+      }
+
+      &--right {
+        right: $space-small;
+      }
+    }
+  }
+
+  &__importance {
+    padding: 0 $space-small;
+    margin-top: $space-gap;
+
+    &--list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: $space-small;
+    }
+
+    &--line {
+      display: flex;
+      align-items: center;
+      gap: $space-mini;
+
+      &--txt {
+        font-size: $text-small;
+        // flex: 1;
+      }
+
+      &--icon {
+        flex: 1 0 $text-emphasize;
+        font-size: $text-emphasize;
+        color: $color-shade;
+      }
+    }
+  }
+}

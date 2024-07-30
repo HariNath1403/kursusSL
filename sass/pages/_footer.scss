@@ -1,0 +1,42 @@
+.footer {
+  padding: $space-decent $space-sub $space-margin;
+  background-color: $color-shade;
+
+  &__header {
+    @include header-style;
+    color: $color-tint;
+  }
+
+  &__list {
+    margin-top: $space-standard;
+    list-style: none;
+    color: $color-tint;
+
+    &--row {
+      display: flex;
+      gap: $space-small;
+      align-items: center;
+
+      &:not(&:last-child) {
+        margin-bottom: $space-sub;
+      }
+    }
+
+    &--icon {
+      font-size: $text-emphasize;
+      flex: 1 0 $text-emphasize;
+      transform: scale(1.125);
+    }
+
+    &--txt {
+      display: inline-block;
+      margin-left: $space-small;
+      font-size: $text-small;
+    }
+
+    &--link {
+      display: inline-block;
+      color: $color-tint;
+    }
+  }
+}

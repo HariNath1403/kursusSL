@@ -1,0 +1,39 @@
+.references {
+  padding: $space-standard 0 $space-decent;
+  background-color: $color-shade;
+
+  &__header {
+    @include header-style;
+    color: $color-tint;
+  }
+
+  &__grid {
+    margin-top: $space-standard;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: $space-mini;
+    row-gap: $space-margin;
+    width: 100%;
+    padding: $space-small;
+  }
+
+  &__figure {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+
+    &--caption {
+      font-size: $text-mini;
+      color: $color-tint;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
